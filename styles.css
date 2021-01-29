@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+}
+
+.flex-containter {
+    display:flex;
+    flex-wrap: nowrap;
+    background-color: grey;
+    min-height: 100%;
+}
+
+.menu {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 15em;
+}
+
+.page {
+    flex-grow: 1;
+    background-color: blue;
+}
