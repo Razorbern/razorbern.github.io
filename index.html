@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript">
+    <script type="text/javascript">
 function load_content(id, content) {
     document.getElementById(id).innerHTML = '<object type="text/html" data="' + content + '""></object>';
 }
-</script>
+    </script>
 
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Knowledge Mining Labs</title>
 </head>
 <body>
-<div>
-    <h1>Knowledge Mining</h1>
+<div class="km-header">
+    <div class="km-header-title">EPP6323 Knowledge Mining</div>
+    <div class="km-header-name">Bernard Sy</div>
 </div>
 
 <div class="flex-containter">
     <div class="menu">
-        <a href="javascript:" onclick="load_content('page', 'assignment2.html')">Assignment 2</a>
+        <div class="menu-item" onclick="load_content('page', 'lab01.html')">
+            <div class="menu-item-text">LAB 01</div>
+        </div>
+        <div class="menu-item" onclick="load_content('page', 'lab02.html')">
+            <div class="menu-item-text">LAB 02</div>
+        </div>
+        <div class="menu-item" onclick="load_content('page', 'lab03.html')">
+            <div class="menu-item-text">LAB 03</div>
+        </div>
+        <div class="menu-item" onclick="load_content('page', 'lab04.html')">
+            <div class="menu-item-text">LAB 04</div>
+        </div>
     </div>
     <div id="page" class="page">
-        Page
+        <div class="default-page">
+            <br>
+            Assignments for EPP6323 Knowledge Mining
+        </div>
     </div>
 </div>
 </body>
