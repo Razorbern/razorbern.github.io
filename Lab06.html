@@ -295,7 +295,9 @@ table(glm.pred,Direction.2005)</code></pre>
 ##     Up     34 44</code></pre>
 <pre class="r"><code>mean(glm.pred==Direction.2005)</code></pre>
 <pre><code>## [1] 0.4801587</code></pre>
-<p>###Fit smaller model</p>
+</div>
+<div id="fit-smaller-model" class="section level3">
+<h3>Fit smaller model</h3>
 <pre class="r"><code>glm.fit=glm(Direction~Lag1+Lag2,
             data=Smarket,family=binomial, subset=train)
 glm.probs=predict(glm.fit,newdata=Smarket[!train,],type=&quot;response&quot;) 
