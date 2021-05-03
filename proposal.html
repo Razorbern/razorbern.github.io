@@ -43,8 +43,12 @@ to explore the relationships between the PM2.5 and windspeed/direction. I'll be 
 withing the same station and I'll also group the stations in the urban areas with the stations in the suburbs.<br>
 <br>
 <br>
+
+
 <b>Geolocation</b><br>
 I first found the geolocations of the stations and then used the ggmap library to map them.<br>
+<br>
+<img src="station_locations.png"><br>
 <br>
 <pre>
     register_google(key = [google api key])
@@ -58,4 +62,16 @@ I first found the geolocations of the stations and then used the ggmap library t
 </pre>
 <br>
 <img src="stations.svg"><br>
+<br>
+<br>
+<b>Sample Data</b><br>
+Here's a sample of the data set:<br>
+<img src="sample_data.png"><br>
+<br>
+<br>
+<b>Methods</b><br>
+I'm currently exploring R's time series support and how to display the data in the way that I want. It's
+time consuming since there's so many options. From there, I'll be looking at applying the regression
+methods we learned in class to explore which attributes affect the PM2.5 and if any affect the PM2.5 readings
+from the urban vs suburban readings.<br>
 <br>
