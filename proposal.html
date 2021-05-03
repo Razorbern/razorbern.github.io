@@ -36,6 +36,7 @@ station: name of the air-quality monitoring site<br>
 A quick Google search reveales several statistical analyses with Beijing air quality data, though the years and
 content vary.<br>
 <br>
+<br>
 <b>Proposal</b><br>
 My original plan was to use the location of the stations to explore unsuperviced clustering techinques. But
 as you can see from the map, there aren't well distributed nor are there enough of them. I'm pivoting 
@@ -60,7 +61,6 @@ I first found the geolocations of the stations and then used the ggmap library t
     ggmap(myMap)+
     +     geom_point(aes(x = Longitude, y = Latitude), data = data, alpha=.5, color="blue", size=3)
 </pre>
-<br>
 <img src="stations.svg"><br>
 <br>
 <br>
